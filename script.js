@@ -220,3 +220,39 @@ class studentinfo {
 let kritii = new studentinfo("kritii", 8, "kritii0812@gmail.com", 9373679857);
 
 console.log(kritii);
+
+//  INHERITANCE IN CLASSES & OBJECTS
+
+class person {
+  eat() {
+    console.log("eat");
+  }
+
+  sleep() {
+    console.log("sleep");
+  }
+
+  work() {
+    console.log("do nothing");
+  }
+}
+
+class engineear extends person {
+  work() {
+    console.log("solve problems , build something");
+  }
+}
+
+let ovii = new engineear();
+
+console.log(ovii);
+
+class doctor extends person {
+  work() {
+    console.log("solve peciant problems , stay helhty");
+  }
+}
+
+let vaiduu = new doctor();
+
+console.log(vaiduu.sleep());
