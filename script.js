@@ -94,9 +94,9 @@ vaidhi.__proto__ = student;
 // console.log("student1", student1);
 
 class toyota {
-  brand() {
-    brand = this.toyota;
-    console.log(this.brand);
+  constructor(brand) {
+    console.log("creating new car model");
+    this.brand = brand;
   }
 
   start() {
@@ -116,10 +116,50 @@ class toyota {
   }
 }
 
-let fortuner = new toyota();
-
+let fortuner = new toyota("fortuner");
 console.log(fortuner);
 
-let camry = new toyota();
-
+let camry = new toyota("camry");
 console.log(camry);
+
+class BMW {
+  constructor(brand) {
+    console.log("creating new car model");
+    this.brand = brand;
+  }
+
+  start() {
+    console.log("start the car");
+  }
+
+  stop() {
+    console.log("stop the car");
+  }
+
+  break() {
+    console.log("break");
+  }
+}
+
+let m5 = new BMW("m5");
+console.log(m5);
+
+let m4 = new BMW("m4");
+console.log(m4);
+
+class audi {
+  constructor(brand) {
+    console.log("creating new car model");
+    this.brand = brand;
+  }
+  start() {
+    console.log("star the car");
+  }
+
+  stop() {
+    console.log("stop the car");
+  }
+}
+
+let x1 = new audi("x1");
+console.log(x1);
