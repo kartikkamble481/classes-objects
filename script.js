@@ -93,34 +93,34 @@ vaidhi.__proto__ = student;
 
 // console.log("student1", student1);
 
-class toyota {
-  constructor(brand) {
-    console.log("creating new car model");
-    this.brand = brand;
-  }
+// class toyota {
+//   constructor(brand) {
+//     console.log("creating new car model");
+//     this.brand = brand;
+//   }
 
-  start() {
-    console.log("start");
-  }
+//   start() {
+//     console.log("start");
+//   }
 
-  stop() {
-    console.log("stop");
-  }
+//   stop() {
+//     console.log("stop");
+//   }
 
-  break() {
-    console.log("break");
-  }
+//   break() {
+//     console.log("break");
+//   }
 
-  exletor() {
-    console.log("exletor");
-  }
-}
+//   exletor() {
+//     console.log("exletor");
+//   }
+// }
 
-let fortuner = new toyota("fortuner");
-console.log(fortuner);
+// let fortuner = new toyota("fortuner");
+// console.log(fortuner);
 
-let camry = new toyota("camry");
-console.log(camry);
+// let camry = new toyota("camry");
+// console.log(camry);
 
 class BMW {
   constructor(brand) {
@@ -256,3 +256,47 @@ class doctor extends person {
 let vaiduu = new doctor();
 
 console.log(vaiduu.sleep());
+
+//  EXAMPLE 2 (INHERITANCE)
+
+class car {
+  constructor(brand) {
+    console.log("creating a new car model ");
+    this.brand = brand;
+  }
+  start() {
+    console.log("start the car ");
+  }
+
+  stop() {
+    console.log("stop the car ");
+  }
+
+  break() {
+    console.log("press the break and stop the car");
+  }
+}
+
+class toyota extends car {
+  work() {
+    console.log("feel link MAFIYA");
+  }
+}
+
+let fortunerr = new toyota("fortuner");
+
+console.log(fortunerr);
+
+let indover = new toyota("indover");
+
+console.log(indover);
+
+class mercdies extends car {
+  wokr() {
+    console.log("feel like lugeries");
+  }
+}
+
+let m6 = new mercdies("m6");
+
+console.log(m6);
