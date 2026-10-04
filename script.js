@@ -223,39 +223,39 @@ console.log(kritii);
 
 //  INHERITANCE IN CLASSES & OBJECTS
 
-class person {
-  eat() {
-    console.log("eat");
-  }
+// class person {
+//   eat() {
+//     console.log("eat");
+//   }
 
-  sleep() {
-    console.log("sleep");
-  }
+//   sleep() {
+//     console.log("sleep");
+//   }
 
-  work() {
-    console.log("do nothing");
-  }
-}
+//   work() {
+//     console.log("do nothing");
+//   }
+// }
 
-class engineear extends person {
-  work() {
-    console.log("solve problems , build something");
-  }
-}
+// class engineear extends person {
+//   work() {
+//     console.log("solve problems , build something");
+//   }
+// }
 
-let ovii = new engineear();
+// let ovii = new engineear();
 
-console.log(ovii);
+// console.log(ovii);
 
-class doctor extends person {
-  work() {
-    console.log("solve peciant problems , stay helhty");
-  }
-}
+// class doctor extends person {
+//   work() {
+//     console.log("solve peciant problems , stay helhty");
+//   }
+// }
 
-let vaiduu = new doctor();
+// let vaiduu = new doctor();
 
-console.log(vaiduu.sleep());
+// console.log(vaiduu.sleep());
 
 //  EXAMPLE 2 (INHERITANCE)
 
@@ -300,3 +300,77 @@ class mercdies extends car {
 let m6 = new mercdies("m6");
 
 console.log(m6);
+
+// super(); keyword use
+
+class person {
+  constructor(name, branch) {
+    this.name = name;
+    this.branch = branch;
+    // console.log("name =", name);
+    // console.log("branch = ", branch);
+  }
+
+  eat() {
+    console.log("eat");
+  }
+
+  sleep() {
+    console.log("sleep");
+  }
+}
+
+class Engineear extends person {
+  constructor(name, branch) {
+    super(name, branch);
+    // this.name = name;
+  }
+
+  work() {
+    console.log("solve ptoblem and build something ");
+  }
+}
+
+let engg1 = new Engineear("kartik", "AIML");
+console.log(engg1);
+
+// PRACTICE SET 1 IN CLASSES AND OBJECTS
+
+// Q1 = You are crreating a website for your collage. create a class user with 2 properties ,  name & email. it also have method called viewData() that allows user to view website data .
+
+let DATA = "secret information";
+
+class user {
+  constructor(name, email, branch) {
+    this.name = name;
+    this.email = email;
+    this.brach = branch;
+  }
+
+  viewDATA() {
+    this.data = DATA;
+  }
+
+  collageName() {
+    console.log("YSPM collage satara");
+  }
+}
+
+let s1 = new user("kartik kamble", "kartikkamble481@gmail.com", "MCA-I");
+
+console.log(s1);
+
+// Q2 = create a new class called Admin which inherit from user add a new method called editData to admin that allows website data.
+
+class admin extends user {
+  constructor(name, email, branch) {
+    super(name, email, branch);
+  }
+  viewDATA() {
+    this.data = "some value";
+  }
+}
+
+let admin1 = new admin("komal", "komal@gnail.com", "HCL");
+
+console.log(admin1);
