@@ -374,3 +374,53 @@ class admin extends user {
 let admin1 = new admin("komal", "komal@gnail.com", "HCL");
 
 console.log(admin1);
+
+// PERSONAL PRACTICE
+
+// OBJECTS IN JS
+
+const instaprofile = {
+  userid: "@kartyaa_08",
+  bio: "every painfull switchvation is a beatifull destiny",
+  username: "KARTIK",
+};
+
+const kriti = {
+  userid: "@kritii_08",
+  bio: "every painfull switchvation is a beatifull destiny",
+  username: "KRITII",
+};
+
+kriti.__proto__ = instaprofile;
+
+console.log(kriti);
+
+// CLASS IN JS
+
+class instagramprofile {
+  constructor(name) {
+    this.name = name;
+  }
+  id(name) {
+    this.id = name;
+  }
+
+  username() {
+    this.username = name;
+  }
+
+  bio() {
+    console.log("OVIIIXII");
+    console.log("risk is better than regret");
+  }
+}
+
+let kartikk = new instagramprofile("@kartik");
+
+console.log(kartikk);
+
+class oviii extends instagramprofile {}
+
+let oviiii = new oviii("OVIII");
+
+console.log(oviiii);
