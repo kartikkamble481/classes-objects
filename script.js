@@ -202,7 +202,7 @@ class studentinfo {
     this.mobNo = mobNo;
   }
 
-  collageNmae() {
+  collageName() {
     console.log(
       "collage Name = YSPM satara (yashodha institute and tecnology campus satara)",
     );
