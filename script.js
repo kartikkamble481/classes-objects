@@ -163,3 +163,60 @@ class audi {
 
 let x1 = new audi("x1");
 console.log(x1);
+
+class studentprofile {
+  constructor(name, rollno, email) {
+    console.log("creating new student profile");
+    this.name = name;
+    this.rollno = rollno;
+    this.email = email;
+  }
+
+  year() {
+    console.log("MCA - I year");
+  }
+
+  clgname() {
+    console.log("YSPM collage satara");
+  }
+
+  address() {
+    console.log("satara, mumbai pune haiway");
+  }
+}
+
+let kartik = new studentprofile("kartik", 8, "kartikkamble481@gmail.com");
+
+console.log(kartik);
+
+let prasad = new studentprofile("Prasad Dodke ", 45, "prasaddodke34@gmail.com");
+
+console.log(prasad);
+
+class studentinfo {
+  constructor(name, rollNo, email, mobNo) {
+    console.log("creating new student profile");
+    this.name = name;
+    this.rollNo = rollNo;
+    this.email = email;
+    this.mobNo = mobNo;
+  }
+
+  collageNmae() {
+    console.log(
+      "collage Name = YSPM satara (yashodha institute and tecnology campus satara)",
+    );
+  }
+
+  address() {
+    console.log(" Satara , Mumbai Pune haiway satara");
+  }
+
+  pincode() {
+    console.log("415311");
+  }
+}
+
+let kritii = new studentinfo("kritii", 8, "kritii0812@gmail.com", 9373679857);
+
+console.log(kritii);
