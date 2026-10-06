@@ -424,3 +424,41 @@ class oviii extends instagramprofile {}
 let oviiii = new oviii("OVIII");
 
 console.log(oviiii);
+
+class info {
+  constructor(fullName, mobNo, email) {
+    this.fullName = fullName;
+    this.mobNo = mobNo;
+    this.email = email;
+  }
+
+  address() {
+    this.address = "";
+  }
+
+  education() {
+    this.education = "";
+  }
+}
+
+let kartyaa = new info("kartik kamble", 8421239106, "kartyaa08@gmail.com");
+
+console.log(kartyaa);
+
+class kartuu extends info {
+  constructor(fullName, mobNo, email) {
+    super(fullName, mobNo, email);
+  }
+
+  address() {
+    console.log("AT post vita , tal- khanapur Dis-sangli");
+  }
+
+  education() {
+    console.log("BCA-Complated , MCA- learing");
+  }
+}
+
+let kartuuu = new kartuu("kartuu", 9373679857, "kritii@0812gmail.com");
+
+console.log(kartuuu);
